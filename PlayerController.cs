@@ -23,8 +23,8 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         Vector2 position = rb.position;
-        position.x = position.x + 3.0f * horizontal * Time.deltaTime;
-        position.y = position.y + 3.0f * vertical * Time.deltaTime;
+        position.x = position.x + 5.0f * horizontal * Time.deltaTime;
+        position.y = position.y + 5.0f * vertical * Time.deltaTime;
         rb.MovePosition(position);
     }
 }
